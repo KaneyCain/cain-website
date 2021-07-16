@@ -1,10 +1,10 @@
-// import {Navbar} from '../UI/navbar'
+import {Navbar} from '../UI/navbar'
 import Footer from '../UI/footer'
 
 export default function Layout({ children}) {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
         <main>{children}</main>
       <Footer />
     </>

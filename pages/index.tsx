@@ -16,16 +16,10 @@ export default function Home() {
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          Blah  <a href="https://youtube.com">Alex Cain  dncdcndlcdcddnndndnd ddddddddddddddddddddddddddddd</a>
+          Blah  <a href="https://youtube.com">Alex Cain</a>
         </h1>
 
       </main>
-
-      {/* <footer className={styles.footer}>
-        <a>
-          Copyright © 2021 Alexander Christopher Cain
-        </a>
-      </footer> */}
     </div>
 
     </>
