@@ -10,7 +10,7 @@ interface IPageHeadProps {
 export const PageHead = ({ title, description }: IPageHeadProps) => {
   return (
     <Head>
-      <title>{"Cain"}</title>
+      <title>{"ALEXCAIN"}</title>
       <meta
         name="description"
         content={

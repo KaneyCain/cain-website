@@ -6,7 +6,6 @@ export default function Layout({ children }) {
   return (
     
     <>
-      
       <Navbar />
         <PageHead/>
         <main>{children}</main>
