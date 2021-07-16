@@ -2,15 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-//Component
-import { PageHead } from '../components/heading'
-
 export default function Home() {
   return (
      <>
-
-      <PageHead />
-
       <div className={styles.container}>
 
       <main className={styles.main}>
