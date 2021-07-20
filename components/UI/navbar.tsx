@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
+import {useTheme} from 'next-themes'
+
+import {DarkmodeToggleButton} from "../DarkMode/darkmodeButton"
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -14,12 +17,8 @@ export const Navbar = () => {
         <div className="justify-around ">
           <Link href="/">
             <a className="inline-flex items-center p-2 mr-4 ">
-              <span className="text-4xl font-semibold tracking-wide text-gray-900 uppercase font-title">
-                Alex
-              </span>
-
-              <span className="text-4xl font-semibold tracking-wide text-gray-900 uppercase font-title">
-                Cain
+              <span className="text-4xl font-semibold tracking-wide uppercase font-title">
+                Alex•Cain
               </span>
             </a>
           </Link>
@@ -74,8 +73,13 @@ export const Navbar = () => {
                 Contact
               </span>
             </Link>
+
+            <DarkmodeToggleButton/>
+
           </div>
         </div>
+
+       
       </nav>
     </>
   );
