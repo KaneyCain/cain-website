@@ -1,4 +1,4 @@
-import {Navbar} from '../UI/navbar'
+import {Navbar} from '../UI/NavBar/navbar'
 import {Footer} from '../UI/footer'
 import { PageHead } from '../heading'
 
