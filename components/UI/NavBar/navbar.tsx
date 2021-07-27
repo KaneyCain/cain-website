@@ -74,6 +74,8 @@ export const Navbar = () => {
 
             <navButton/>
 
+            {/* functional nav button using props */}
+
           </div>
         </div>
 
