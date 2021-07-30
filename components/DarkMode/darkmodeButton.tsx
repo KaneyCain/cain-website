@@ -11,7 +11,7 @@ export const DarkmodeToggleButton = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10 text-indigo-200"
+            className="w-10 h-10 px-1 text-indigo-200"
             fill="none"
             viewBox="0 0 27 27"
             stroke="currentColor"
@@ -29,7 +29,7 @@ export const DarkmodeToggleButton = () => {
             onClick={() => setTheme("light")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10 text-indigo-200"
+            className="w-10 h-10 px-1 text-indigo-200"
             fill="none"
             viewBox="0 0 27 27"
             stroke="currentColor"
