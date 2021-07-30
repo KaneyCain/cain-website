@@ -2,9 +2,9 @@ import Link from "next/link";
 import { useState } from "react";
 import {useTheme} from 'next-themes'
 
-import {DarkmodeToggleButton} from "../../DarkMode/darkmodeButton"
-import { navButton } from "./navBarButton";
-
+import { DarkmodeToggleButton } from "../../DarkMode/darkmodeButton"
+import { NavBarButton } from "./navBarButton";
+   
 export const Navbar = () => {
   const [active, setActive] = useState(false);
 
@@ -19,7 +19,7 @@ export const Navbar = () => {
           <Link href="/">
             <a className="inline-flex items-center p-2 mr-4 ">
               <span className="text-4xl font-semibold tracking-wide uppercase font-title">
-                Alex•Cain
+                ALEX•CAIN
               </span>
             </a>
           </Link>
@@ -46,40 +46,30 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`${
+          className={`${  
             active ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className="flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto ">
 
-            <Link href="/">
-              <span className="items-center justify-center w-full px-5 py-2 font-semibold text-gray-900 rounded font-title lg:inline-flex lg:w-auto hover:bg-gray-100 ">
-                About
-              </span>
-            </Link>
+            <NavBarButton
+              title = {"About"}
+              navlink = {"/"}
+            />
 
-            <Link href="/">
-              <span className="items-center justify-center w-full px-5 py-2 font-semibold text-gray-900 rounded font-title lg:inline-flex lg:w-auto hover:bg-gray-100 ">
-                Skills
-              </span>
-            </Link>
+            <NavBarButton
+              title = {"Skills"}
+              navlink = {"/"}
+            />
 
-            <Link href="/">
-              <span className="items-center justify-center w-full px-5 py-2 font-semibold text-gray-900 rounded font-title lg:inline-flex lg:w-auto hover:bg-gray-100 ">
-                Contact
-              </span>
-            </Link>
+            <NavBarButton
+              title = {"Contact"}
+              navlink = {"/"}
+            />
 
             <DarkmodeToggleButton/>
-
-            <navButton/>
-
-            {/* functional nav button using props */}
-
           </div>
         </div>
-
-       
       </nav>
     </>
   );
