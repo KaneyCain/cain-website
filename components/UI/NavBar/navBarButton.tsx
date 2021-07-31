@@ -7,14 +7,16 @@ interface props {
   navlink: string;
 }
 
-export const NavBarButton = ({ title, navlink }:props) => {
+export const NavBarButton = ({ title, navlink }: props) => {
   return (
-    <>
-      <Link href="/">
-        <span className="items-center justify-center w-full px-5 py-2 font-semibold text-gray-900 rounded font-title lg:inline-flex lg:w-auto hover:bg-gray-100 ">
-          {title}
+    <button>
+      <Link href= {navlink} >
+        <span className="items-center justify-center w-full px-5 py-2 rounded lg:inline-flex lg:w-auto">
+          <h1 className="font-semibold text-title-dark font-title">
+            {title}
+          </h1>
         </span>
       </Link>
-    </>
-  )
+    </button>
+  );
 };

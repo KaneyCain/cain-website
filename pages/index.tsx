@@ -10,7 +10,7 @@ import {Skills} from "../pages/PageBlocks/Skills/Skills"
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="px-4" >
         <Hero/>
         <About/>
         <Skills/>

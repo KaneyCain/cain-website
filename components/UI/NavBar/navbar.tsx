@@ -18,8 +18,16 @@ export const Navbar = () => {
         <div className="justify-around ">
           <Link href="/">
             <a className="inline-flex items-center p-2 mr-4 ">
-              <span className="text-4xl font-semibold tracking-wide uppercase font-title">
-                ALEX•CAIN
+              <span className="text-4xl font-semibold tracking-wide uppercase font-title text-title-dark">
+                ALEX
+              </span>
+
+              <span className="text-4xl font-semibold tracking-wide uppercase font-title text-mainBlue">
+                •
+              </span>
+
+              <span className="text-4xl font-semibold tracking-wide uppercase font-title text-title-dark">
+                CAIN
               </span>
             </a>
           </Link>
@@ -46,28 +54,18 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`${  
+          className={`${
             active ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className="flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto ">
-            
-            <NavBarButton
-              title = {"About"}
-              navlink = {"/"}
-            />
+            <NavBarButton title={"About"} navlink={"/"} />
 
-            <NavBarButton
-              title = {"Skills"}
-              navlink = {"/"}
-            />
+            <NavBarButton title={"Skills"} navlink={"/"} />
 
-            <NavBarButton
-              title = {"Contact"}
-              navlink = {"/"}
-            />
+            <NavBarButton title={"Contact"} navlink={"/"} />
 
-            <DarkmodeToggleButton/>
+            <DarkmodeToggleButton />
           </div>
         </div>
       </nav>
