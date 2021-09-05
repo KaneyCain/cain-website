@@ -7,24 +7,20 @@ module.exports = {
       body: ["Nunito"],
       title: ["Quicksand"],
     },
-    // backgroundColor: (theme) => theme("colors"),
-    // colors: {
-    //   black: colors.black,
-    //   white: colors.white,
-    //   gray: colors.coolGray,
-    //   red: colors.red,
-    //   yellow: colors.amber,
-    //   green: colors.emerald,
-    //   blue: colors.blue,
-    //   indigo: colors.indigo,
-    //   purple: colors.violet,
-    //   pink: colors.pink,
-    // },
     colors: {
-      indigo: {
-        light: '#202e78',
-        DEFAULT: '#5c6ac4',
-        dark: '#b3bcf5',
+      title: {
+        light: '#000000 ',
+        DEFAULT: '#ffffff',
+        dark: '##ffffff',
+      },
+      devPink: {
+        light: '#EA0A8E',
+        DEFAULT: '#EA0A8E',
+        dark: '#EA0A8E',
+      },
+      mainBlue: {
+        DEFAULT: '#488ae8',
+        Hover: '#679eec',
       }
     },
 
