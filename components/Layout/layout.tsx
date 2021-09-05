@@ -2,14 +2,16 @@ import {Navbar} from '../UI/NavBar/navbar'
 import {Footer} from '../UI/footer'
 import { PageHead } from '../heading'
 
-export default function Layout({ children }) {
+interface ILayoutProps extends React.HTMLProps<HTMLDivElement> {}
+
+export default function Layout(props: ILayoutProps) {
   return (
-    
     <>
       <Navbar />
-        <PageHead/>
-        <main>{children}</main>
+      <PageHead/>
+      <main> {props.children} </main>
       <Footer />
     </>
   )
 }
+
