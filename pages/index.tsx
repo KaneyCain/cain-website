@@ -1,6 +1,6 @@
-import {Hero} from "../pages/PageBlocks/Hero/Hero"
-import {About} from "../pages/PageBlocks/About/About" 
-import {Skills} from "../pages/PageBlocks/Skills/Skills"
+import {Hero} from "../components/Home/Hero/Hero"
+import {About} from "../components/Home/About/About" 
+import {Skills} from "../components/Home/Skills/Skills"
 
 import Layout from "../components/Layout/layout";
 

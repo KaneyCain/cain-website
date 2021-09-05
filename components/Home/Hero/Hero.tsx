@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import heroPic from "../../../Assets/Images/hero.jpg";
 import { HeroImage } from "./HeroImage";
-import { CVButton } from "../../../components/Buttons/CVButton";
+import { CVButton } from "../../Buttons/CVButton";
 
 
 export const Hero = () => {
